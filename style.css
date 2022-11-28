@@ -1,0 +1,216 @@
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    color: azure;
+    line-height: 2.5;
+}
+
+#main {
+    display: flex;
+    padding: 25%;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+    text-shadow: 5px 5px 30px #000000, 5px 5px 30px #000, 5px 5px 30px #000;
+}
+
+body {
+    background-attachment: local ;
+    background: radial-gradient(#3450a5, #101010);
+}
+h1 {
+    display: flex;
+    font-family: source sans pro, sans-serif;
+    text-shadow: 5px 5px 6px #000000, 5px 5px 10px #000;
+    color: aliceblue;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-family: source sans pro, sans-serif;
+    text-shadow: 5px 5px 6px #000000, 5px 5px 10px #000;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subTxt {
+    display: none;
+    font-size: 26px;
+    text-shadow: 5px 5px 6px #000000, 5px 5px 10px #000, 5px 5px 10px #000;
+}
+
+#subTxt {
+    display: none;
+    font-size: 26px;
+    text-shadow: 5px 5px 6px #000000, 5px 5px 10px #000, 5px 5px 10px #000;
+}
+
+.nav {
+    display: flex;
+    max-width: 100%;
+    max-height: 8%;
+    padding: 1%;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.logo :hover {
+    filter: brightness(145%);
+    transition: ease-in 0.2s;
+}
+
+.navButton {
+    display: flex;
+    width: 50%;
+    letter-spacing: 3px;
+    margin-right: 2%;
+    font-weight: bold;
+    gap: 75px;
+    font-size: 1.8em;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.navButton a:hover {
+    text-shadow: 5px 5px 10px #3450a5, 5px 5px 10px rgb(0, 0, 0);
+    color: #6b7eb6;
+    transform: translateY(0%);
+    transition: ease-in 0.2s;
+}
+
+.textBtn {
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.textBtn :hover {
+    transition: ease-in 0.4s;
+    text-shadow: 0px 5px 5px #000, 10px 10px 20px #000;
+    color: #ffffff;
+    font-size: 1.68em;
+}
+
+#textBtn {
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#textBtn :hover {
+    transition: ease-in 0.4s;
+    font-size: 1.68em;
+}
+
+/*page Formations*/
+
+.container {
+    display: flex;
+    padding: 10%;
+    padding-top: 5%;
+    gap: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.side-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 47%;
+    text-decoration: none;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    line-height: normal;
+    align-items: center;
+    display: flex;
+}
+
+p {
+    line-height: 1.2em;
+    text-align: justify;
+    font-size: 1.3em;
+    text-shadow: 5px 5px 30px #000000, 5px 5px 30px #000, 5px 5px 30px #000;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container a:hover {
+    transition: ease-in 0.4s;
+    text-shadow: 0px 5px 5px #000, 10px 10px 20px #000;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.image {
+    display: flex;
+    width: 47%;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 648px) {
+    
+    .logo {
+        visibility: hidden;
+    }
+
+    #main {
+        padding-top: 10%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container div {
+        width: 100%;
+    }
+
+    .nav {
+        align-items: center;
+        padding-right: 12%;
+    }
+}
